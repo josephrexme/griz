@@ -12383,10 +12383,20 @@ const Fill = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */].
   background: #e0e0e0;
   padding: 10px;
   border-radius: 5px;
+  overflow: hidden;
 `;
 
 const Logo = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */].img`
   width: 150px;
+`;
+
+const Footer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */].p`
+  margin-top: 20px;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #888;
+  }
 `;
 
 const annotate = (...prop) => {
@@ -12417,8 +12427,22 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
       annotate('Grid')
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Works without specifying columns'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
       null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol')
+        )
+      ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         null,
@@ -12448,6 +12472,54 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
       annotate('Grid', 'responsiveMd')
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Resize the window and watch the grids adjust to screen. Other responsive modifiers are ',
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'strong',
+        null,
+        'responsiveSm'
+      ),
+      ' and ',
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'strong',
+        null,
+        'responsiveLg'
+      ),
+      '.'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol')
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol')
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol')
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12468,6 +12540,186 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
           annotate('GridCol', 40)
         )
       )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '25' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 25)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '25' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 25)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '25' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 25)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '25' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 25)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '20' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 20)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '20' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 20)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '20' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 20)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '20' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 20)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '20' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 20)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '25' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 25)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '75' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 75)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '33' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 33)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '33' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 33)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '34' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 34)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '67' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 67)
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { column: '33' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', 33)
+        )
+      )
+    )
+  ),
+  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    Footer,
+    null,
+    'On ',
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'a',
+      { href: 'https://github.com/josephrexme/griz' },
+      'GitHub'
+    ),
+    ' by',
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'a',
+      { href: 'https://josephrex.me' },
+      'Joseph Rex'
     )
   )
 ), document.getElementById('root'));
@@ -26296,6 +26548,10 @@ const columns = width => ({
       flex: 0 0 33%;
       max-width: 33%;
     `,
+  34: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      flex: 0 0 34%;
+      max-width: 34%;
+    `,
   40: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex: 0 0 40%;
       max-width: 40%;
@@ -26311,6 +26567,10 @@ const columns = width => ({
   66: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex: 0 0 66%;
       max-width: 66%;
+    `,
+  67: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      flex: 0 0 67%;
+      max-width: 67%;
     `,
   75: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex: 0 0 75%;
