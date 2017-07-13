@@ -2,9 +2,10 @@
   "name": "griz",
   "version": "1.0.0",
   "description": "Griz Grid",
-  "main": "grid.js",
+  "main": "griz.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "webpack-dev-server",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,16 @@
   },
   "homepage": "https://github.com/josephrexme/griz#readme",
   "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "styled-components": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
   }
 }
