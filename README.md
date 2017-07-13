@@ -10,6 +10,12 @@
 
 A grid system for React applications based on [styled-components](https://www.styled-components.com).
 
+### Installation
+
+```sh
+npm install griz
+```
+
 ### Usage
 ```jsx
 import {Grid, GridCol} from 'griz';
