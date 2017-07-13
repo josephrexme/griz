@@ -38,10 +38,20 @@ const Fill = styled.div`
   background: #e0e0e0;
   padding: 10px;
   border-radius: 5px;
+  overflow: hidden;
 `;
 
 const Logo = styled.img`
   width: 150px;
+`;
+
+const Footer = styled.p`
+  margin-top: 20px;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #888;
+  }
 `;
 
 const annotate = (...prop) => {
@@ -58,17 +68,58 @@ render((
     </Heading>
     <Section>
       <h2>{annotate('Grid')}</h2>
+      <p>Works without specifying columns</p>
       <Grid>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
         <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
         <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
       </Grid>
     </Section>
     <Section>
       <h2>{annotate('Grid', 'responsiveMd')}</h2>
+      <p>
+        Resize the window and watch the grids adjust to screen. Other responsive
+        modifiers are <strong>responsiveSm</strong> and <strong>responsiveLg</strong>.
+      </p>
+      <Grid>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+      </Grid>
       <Grid>
         <GridCol column="60"><Fill>{annotate('GridCol', 60)}</Fill></GridCol>
         <GridCol column="40"><Fill>{annotate('GridCol', 40)}</Fill></GridCol>
       </Grid>
+      <Grid>
+        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
+      </Grid>
+      <Grid>
+        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
+      </Grid>
+      <Grid>
+        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
+        <GridCol column="75"><Fill>{annotate('GridCol', 75)}</Fill></GridCol>
+      </Grid>
+      <Grid>
+        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+        <GridCol column="34"><Fill>{annotate('GridCol', 34)}</Fill></GridCol>
+      </Grid>
+      <Grid>
+        <GridCol column="67"><Fill>{annotate('GridCol', 67)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+      </Grid>
     </Section>
+    <Footer>
+      On <a href="https://github.com/josephrexme/griz">GitHub</a> by
+      <a href="https://josephrex.me">Joseph Rex</a>
+    </Footer>
   </Layout>
 ), document.getElementById('root'));

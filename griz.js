@@ -23,6 +23,10 @@ const columns = width => (
       flex: 0 0 33%;
       max-width: 33%;
     `,
+    34: css`
+      flex: 0 0 34%;
+      max-width: 34%;
+    `,
     40: css`
       flex: 0 0 40%;
       max-width: 40%;
@@ -38,6 +42,10 @@ const columns = width => (
     66: css`
       flex: 0 0 66%;
       max-width: 66%;
+    `,
+    67: css`
+      flex: 0 0 67%;
+      max-width: 67%;
     `,
     75: css`
       flex: 0 0 75%;
