@@ -2,11 +2,11 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: './demo/index.js',
+  entry: './docs/index.js',
 
   output: {
     filename: 'bundle.js',
-    path: path.resolve('./demo'),
+    path: path.resolve('./docs'),
   },
 
   module: {
@@ -20,7 +20,7 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: path.join(__dirname, 'demo'),
+    contentBase: path.join(__dirname, 'docs'),
     port: 3000
   }
 };

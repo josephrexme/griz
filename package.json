@@ -5,7 +5,8 @@
   "main": "griz.js",
   "scripts": {
     "test": "webpack-dev-server",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
