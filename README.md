@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Griz](https://github.com/josephrexme/griz/blob/master/grid.png)
+![Griz](https://cdn.rawgit.com/josephrexme/griz/66796439/griz.png)
 
 </div>
 
