@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/josephrexme/griz/issues"
   },
-  "homepage": "https://github.com/josephrexme/griz#readme"
+  "homepage": "https://github.com/josephrexme/griz#readme",
+  "dependencies": {
+    "styled-components": "^2.1.1"
+  }
 }
