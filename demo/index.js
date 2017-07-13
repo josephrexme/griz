@@ -53,7 +53,7 @@ const annotate = (...prop) => {
 render((
   <Layout>
     <Heading>
-      <Logo src="https://cdn.rawgit.com/josephrexme/griz/66796439/griz.png" />
+      <Logo src="https://cdn.rawgit.com/josephrexme/griz/6929f017/griz-gray.png" />
       <h1>Griz Grids</h1>
     </Heading>
     <Section>
@@ -64,7 +64,7 @@ render((
       </Grid>
     </Section>
     <Section>
-      <h2>{annotate('Grid', 'responsive')}</h2>
+      <h2>{annotate('Grid', 'responsiveMd')}</h2>
       <Grid>
         <GridCol column="60"><Fill>{annotate('GridCol', 60)}</Fill></GridCol>
         <GridCol column="40"><Fill>{annotate('GridCol', 40)}</Fill></GridCol>
