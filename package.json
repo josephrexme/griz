@@ -1,0 +1,23 @@
+{
+  "name": "flax",
+  "version": "1.0.0",
+  "description": "Flax Grid",
+  "main": "grid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephrexme/flax.git"
+  },
+  "keywords": [
+    "grid",
+    "flexbox"
+  ],
+  "author": "Joseph Rex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephrexme/flax/issues"
+  },
+  "homepage": "https://github.com/josephrexme/flax#readme"
+}
