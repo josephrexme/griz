@@ -62,5 +62,5 @@ For more column values, see the [demo](https://josephrexme.github.io/griz/).
 
 ### Acknowledgements
 Original idea by [Phillip Walton](http://philipwalton.github.io/solved-by-flexbox/demos/grids/)<br>
-Much thanks [ionic framework](http://ionicframework.com/docs/components/#grid) for putting it together<br>
+Much thanks to [ionic framework](http://ionicframework.com/docs/components/#grid) for building on that<br>
 And this wouldn't be possible without [styled-components](https://www.styled-components.com)
