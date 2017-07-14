@@ -29,7 +29,7 @@ const App = () => (
   </Grid>
 );
 ```
-`Grid` wraps a row of column and `GridCol` wraps the columns. The number of `GridCol` placed in a `Grid` will automatically take up the space required without any specification.
+`<Grid>` defines a row and `<GridCol>` defines the columns. The number of `<GridCol>` placed in a `<Grid>` will automatically take up the space required without any specification. But you can also [specify columns](#columns).
 
 #### Responsiveness
 ```jsx
