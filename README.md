@@ -61,7 +61,7 @@ const App = () => (
 For more column values, see the [demo](https://josephrexme.github.io/griz/).
 
 ### Todo
-- Add option for gutterless grids
+- Add offset options for columns
 - Implement CSS grids then flexbox as fallback
 
 ### Acknowledgements

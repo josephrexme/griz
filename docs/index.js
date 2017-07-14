@@ -117,9 +117,20 @@ render((
         <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
       </Grid>
     </Section>
+    <Section>
+      <h2>{annotate('Grid', 'gutterless')}</h2>
+      <p>
+        You can also create grid without gutters
+      </p>
+      <Grid gutterless>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+      </Grid>
+    </Section>
     <Footer>
       On <a href="https://github.com/josephrexme/griz">GitHub</a> by
-      <a href="https://josephrex.me">Joseph Rex</a>
+      <a href="https://josephrex.me"> Joseph Rex</a>
     </Footer>
   </Layout>
 ), document.getElementById('root'));
