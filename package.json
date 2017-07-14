@@ -14,7 +14,10 @@
   },
   "keywords": [
     "grid",
-    "flexbox"
+    "flexbox",
+    "styled-components",
+    "css-in-js",
+    "react"
   ],
   "author": "Joseph Rex",
   "license": "MIT",

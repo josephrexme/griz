@@ -75,6 +75,11 @@ For more column values, see the [demo](https://josephrexme.github.io/griz/).
 - Add offset options for columns
 - Implement CSS grids then flexbox as fallback
 
+### License
+Licensed under MIT License, Copyright © Joseph Rex
+
+See [LICENSE](https://github.com/josephrexme/griz/blob/master/LICENSE) for more information.
+
 ### Acknowledgements
 Original idea by [Phillip Walton](http://philipwalton.github.io/solved-by-flexbox/demos/grids/)<br>
 Much thanks to [ionic framework](http://ionicframework.com/docs/components/#grid) for building on that<br>
