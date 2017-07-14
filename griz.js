@@ -78,7 +78,7 @@ export const Grid = styled.div`
     margin-top: ${(paddingWidth / 2) * -1}px;
     padding-top: 0;
   }
-  @media (max-width: ${responsiveSmBreak})
+  @media (max-width: ${responsiveSmBreak}){
     ${props => props.responsiveSm && css`
       flex-direction: column;
       > ${GridCol}{
@@ -89,7 +89,7 @@ export const Grid = styled.div`
       }
     `}
   }
-  @media (max-width: ${responsiveMdBreak})
+  @media (max-width: ${responsiveMdBreak}){
     ${props => props.responsiveMd && css`
       flex-direction: column;
       > ${GridCol}{
@@ -100,7 +100,7 @@ export const Grid = styled.div`
       }
     `}
   }
-  @media (max-width: ${responsiveLgBreak})
+  @media (max-width: ${responsiveLgBreak}){
     ${props => props.responsiveLg && css`
       flex-direction: column;
       > ${GridCol}{

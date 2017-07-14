@@ -12371,7 +12371,7 @@ const Heading = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default *
 `;
 
 const Section = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */].section`
-  width: 800px;
+  max-width: 800px;
   margin: 10px auto;
   padding: 10px;
   background: rgba(255, 255, 255, .8);
@@ -12490,7 +12490,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      { responsive: true },
+      { responsiveMd: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         null,
@@ -12521,7 +12521,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      null,
+      { responsiveMd: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         { column: '60' },
@@ -12543,7 +12543,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      null,
+      { responsiveMd: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         { column: '25' },
@@ -12583,7 +12583,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      null,
+      { responsiveMd: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         { column: '20' },
@@ -12632,7 +12632,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      null,
+      { responsiveMd: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         { column: '25' },
@@ -12654,7 +12654,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      null,
+      { responsiveMd: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         { column: '33' },
@@ -12685,7 +12685,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      null,
+      { responsiveMd: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         { column: '67' },
@@ -26604,7 +26604,7 @@ const Grid = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].
     margin-top: ${paddingWidth / 2 * -1}px;
     padding-top: 0;
   }
-  @media (max-width: ${responsiveSmBreak})
+  @media (max-width: ${responsiveSmBreak}){
     ${props => props.responsiveSm && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex-direction: column;
       > ${GridCol}{
@@ -26615,7 +26615,7 @@ const Grid = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].
       }
     `}
   }
-  @media (max-width: ${responsiveMdBreak})
+  @media (max-width: ${responsiveMdBreak}){
     ${props => props.responsiveMd && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex-direction: column;
       > ${GridCol}{
@@ -26626,7 +26626,7 @@ const Grid = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].
       }
     `}
   }
-  @media (max-width: ${responsiveLgBreak})
+  @media (max-width: ${responsiveLgBreak}){
     ${props => props.responsiveLg && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex-direction: column;
       > ${GridCol}{
