@@ -6,7 +6,7 @@
   "scripts": {
     "test": "webpack-dev-server",
     "start": "webpack-dev-server",
-    "build": "npx webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

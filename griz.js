@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 
 const paddingWidth = 10;
-const responsiveSmBreak = 567;
-const responsiveMdBreak = 767;
-const responsiveLgBreak = 1023;
+const responsiveSmBreak = '567px';
+const responsiveMdBreak = '767px';
+const responsiveLgBreak = '1023px';
 
 const columns = width => (
   {

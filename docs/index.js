@@ -81,7 +81,7 @@ render((
         Resize the window and watch the grids adjust to screen. Other responsive
         modifiers are <strong>responsiveSm</strong> and <strong>responsiveLg</strong>.
       </p>
-      <Grid>
+      <Grid responsive>
         <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
         <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
         <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>

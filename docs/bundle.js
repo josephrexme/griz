@@ -12490,7 +12490,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
-      null,
+      { responsive: true },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
         null,
@@ -26527,9 +26527,9 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 const paddingWidth = 10;
-const responsiveSmBreak = 567;
-const responsiveMdBreak = 767;
-const responsiveLgBreak = 1023;
+const responsiveSmBreak = '567px';
+const responsiveMdBreak = '767px';
+const responsiveLgBreak = '1023px';
 
 const columns = width => ({
   10: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
