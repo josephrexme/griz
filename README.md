@@ -60,6 +60,10 @@ const App = () => (
 ```
 For more column values, see the [demo](https://josephrexme.github.io/griz/).
 
+### Todo
+- Add option for gutterless grids
+- Implement CSS grids then flexbox as fallback
+
 ### Acknowledgements
 Original idea by [Phillip Walton](http://philipwalton.github.io/solved-by-flexbox/demos/grids/)<br>
 Much thanks to [ionic framework](http://ionicframework.com/docs/components/#grid) for building on that<br>
