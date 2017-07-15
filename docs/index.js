@@ -55,9 +55,9 @@ const Footer = styled.p`
 `;
 
 const annotate = (...prop) => {
-  const [first, second] = prop;
-  const columnAttr = `${first} column="${second}"`;
-  return `<${ second && (first === 'Grid' ? `${first} ${second}` : columnAttr) || first}>`;
+  const [first, second, third] = prop;
+  const attribute = third ? `${first} offset="${second}"` : `${first} column="${second}"`;
+  return `<${ second && (first === 'Grid' ? `${first} ${second}` : attribute) || first}>`;
 };
 
 render((
@@ -115,6 +115,30 @@ render((
       <Grid responsiveMd>
         <GridCol column="67"><Fill>{annotate('GridCol', 67)}</Fill></GridCol>
         <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+      </Grid>
+    </Section>
+    <Section>
+      <h2>{annotate('Grid', 'responsiveSm')}</h2>
+      <p>
+        Offsetting columns
+      </p>
+      <Grid responsiveSm>
+        <GridCol offset="10"><Fill>{annotate('GridCol', '10', 1)}</Fill></GridCol>
+      </Grid>
+      <Grid responsiveSm>
+        <GridCol offset="25"><Fill>{annotate('GridCol', '25', 1)}</Fill></GridCol>
+      </Grid>
+      <Grid responsiveSm>
+        <GridCol offset="33"><Fill>{annotate('GridCol', '33', 1)}</Fill></GridCol>
+      </Grid>
+      <Grid responsiveSm>
+        <GridCol offset="50"><Fill>{annotate('GridCol', '50', 1)}</Fill></GridCol>
+      </Grid>
+      <Grid responsiveSm>
+        <GridCol offset="67"><Fill>{annotate('GridCol', '67', 1)}</Fill></GridCol>
+      </Grid>
+      <Grid responsiveSm>
+        <GridCol offset="75"><Fill>{annotate('GridCol', '75', 1)}</Fill></GridCol>
       </Grid>
     </Section>
     <Section>

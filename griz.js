@@ -62,12 +62,57 @@ const columns = width => (
   }[width]
 );
 
+const offsets = offset => (
+  {
+    10: css`
+      margin-left: 10%;
+    `,
+    20: css`
+      margin-left: 20%;
+    `,
+    25: css`
+      margin-left: 25%;
+    `,
+    33: css`
+      margin-left: 33%;
+    `,
+    34: css`
+      margin-left: 34%;
+    `,
+    40: css`
+      margin-left: 40%;
+    `,
+    50: css`
+      margin-left: 50%;
+    `,
+    60: css`
+      margin-left: 60%;
+    `,
+    66: css`
+      margin-left: 66%;
+    `,
+    67: css`
+      margin-left: 70%;
+    `,
+    75: css`
+      margin-left: 75%;
+    `,
+    80: css`
+      margin-left: 80%;
+    `,
+    90: css`
+      margin-left: 90%;
+    `,
+  }[offset]
+);
+
 export const GridCol = styled.div`
   display: block;
   flex: 1;
   padding: ${paddingWidth / 2}px;
   width: 100%;
   ${props => columns(props.column)}
+  ${props => offsets(props.offset)}
 `;
 
 export const Grid = styled.div`

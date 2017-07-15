@@ -71,10 +71,6 @@ const App = () => (
 ```
 For more column values, see the [demo](https://josephrexme.github.io/griz/).
 
-### Todo
-- Add offset options for columns
-- Implement CSS grids then flexbox as fallback
-
 ### License
 Licensed under MIT License, Copyright © Joseph Rex
 
