@@ -12400,9 +12400,9 @@ const Footer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */
 `;
 
 const annotate = (...prop) => {
-  const [first, second] = prop;
-  const columnAttr = `${first} column="${second}"`;
-  return `<${second && (first === 'Grid' ? `${first} ${second}` : columnAttr) || first}>`;
+  const [first, second, third] = prop;
+  const attribute = third ? `${first} offset="${second}"` : `${first} column="${second}"`;
+  return `<${second && (first === 'Grid' ? `${first} ${second}` : attribute) || first}>`;
 };
 
 Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12702,6 +12702,98 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
           Fill,
           null,
           annotate('GridCol', 33)
+        )
+      )
+    )
+  ),
+  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    Section,
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h2',
+      null,
+      annotate('Grid', 'responsiveSm')
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Offsetting columns'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      { responsiveSm: true },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { offset: '10' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', '10', 1)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      { responsiveSm: true },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { offset: '25' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', '25', 1)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      { responsiveSm: true },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { offset: '33' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', '33', 1)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      { responsiveSm: true },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { offset: '50' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', '50', 1)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      { responsiveSm: true },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { offset: '67' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', '67', 1)
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      { responsiveSm: true },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        { offset: '75' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol', '75', 1)
         )
       )
     )
@@ -26631,12 +26723,55 @@ const columns = width => ({
     `
 })[width];
 
+const offsets = offset => ({
+  10: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 10%;
+    `,
+  20: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 20%;
+    `,
+  25: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 25%;
+    `,
+  33: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 33%;
+    `,
+  34: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 34%;
+    `,
+  40: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 40%;
+    `,
+  50: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 50%;
+    `,
+  60: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 60%;
+    `,
+  66: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 66%;
+    `,
+  67: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 70%;
+    `,
+  75: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 75%;
+    `,
+  80: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 80%;
+    `,
+  90: __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+      margin-left: 90%;
+    `
+})[offset];
+
 const GridCol = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].div`
   display: block;
   flex: 1;
   padding: ${paddingWidth / 2}px;
   width: 100%;
   ${props => columns(props.column)}
+  ${props => offsets(props.offset)}
 `;
 /* harmony export (immutable) */ __webpack_exports__["b"] = GridCol;
 
