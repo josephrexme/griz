@@ -69,7 +69,16 @@ const App = () => (
   </Grid>
 );
 ```
-For more column values, see the [demo](https://josephrexme.github.io/griz/).
+
+#### Offsets
+```jsx
+const App = () => (
+  <Grid>
+    <GridCol offset="25"></GridCol>
+  </Grid>
+);
+```
+For more column and offset values, see the [demo](https://josephrexme.github.io/griz/).
 
 ### License
 Licensed under MIT License, Copyright © Joseph Rex
