@@ -5,106 +5,28 @@ const responsiveSmBreak = '567px';
 const responsiveMdBreak = '767px';
 const responsiveLgBreak = '1023px';
 
-const columns = width => (
-  {
-    10: css`
-      flex: 0 0 10%;
-      max-width: 10%;
-    `,
-    20: css`
-      flex: 0 0 20%;
-      max-width: 20%;
-    `,
-    25: css`
-      flex: 0 0 25%;
-      max-width: 25%;
-    `,
-    33: css`
-      flex: 0 0 33%;
-      max-width: 33%;
-    `,
-    34: css`
-      flex: 0 0 34%;
-      max-width: 34%;
-    `,
-    40: css`
-      flex: 0 0 40%;
-      max-width: 40%;
-    `,
-    50: css`
-      flex: 0 0 50%;
-      max-width: 50%;
-    `,
-    60: css`
-      flex: 0 0 60%;
-      max-width: 60%;
-    `,
-    66: css`
-      flex: 0 0 66%;
-      max-width: 66%;
-    `,
-    67: css`
-      flex: 0 0 67%;
-      max-width: 67%;
-    `,
-    75: css`
-      flex: 0 0 75%;
-      max-width: 75%;
-    `,
-    80: css`
-      flex: 0 0 80%;
-      max-width: 80%;
-    `,
-    90: css`
-      flex: 0 0 90%;
-      max-width: 90%;
-    `,
-  }[width]
-);
+const gridSizes = [10, 20, 25, 33, 34, 40, 50, 60, 66, 67, 75, 80, 90];
 
-const offsets = offset => (
-  {
-    10: css`
-      margin-left: 10%;
-    `,
-    20: css`
-      margin-left: 20%;
-    `,
-    25: css`
-      margin-left: 25%;
-    `,
-    33: css`
-      margin-left: 33%;
-    `,
-    34: css`
-      margin-left: 34%;
-    `,
-    40: css`
-      margin-left: 40%;
-    `,
-    50: css`
-      margin-left: 50%;
-    `,
-    60: css`
-      margin-left: 60%;
-    `,
-    66: css`
-      margin-left: 66%;
-    `,
-    67: css`
-      margin-left: 70%;
-    `,
-    75: css`
-      margin-left: 75%;
-    `,
-    80: css`
-      margin-left: 80%;
-    `,
-    90: css`
-      margin-left: 90%;
-    `,
-  }[offset]
-);
+const columns = width => {
+  let container = {};
+  gridSizes.map((size) => {
+    return container[size] = css`
+      flex: 0 0 ${size}%;
+      max-width: ${size}%
+    `
+  });
+  return container[width];
+};
+
+const offsets = offset => {
+  let container = {};
+  gridSizes.map((size) => {
+    return container[size] = css`
+      margin-left: ${size}%
+    `
+  });
+  return container[offset];
+};
 
 export const GridCol = styled.div`
   display: block;
