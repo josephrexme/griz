@@ -5,26 +5,18 @@ const responsiveSmBreak = '567px';
 const responsiveMdBreak = '767px';
 const responsiveLgBreak = '1023px';
 
-const columns = width => (
-  css`
-    flex: 0 0 ${width}%;
-    max-width: ${width}%;
-  `
-);
-
-const offsets = offset => (
-  css`
-    margin-left: ${offset}%;
-  `
-);
-
 export const GridCol = styled.div`
   display: block;
   flex: 1;
   padding: ${gutterWidth / 2}px;
   width: 100%;
-  ${props => columns(props.column)}
-  ${props => offsets(props.offset)}
+  ${props => props.column && css`
+    flex: 0 0 ${props.column}%;
+    max-width: ${props.column}%;
+  `}
+  ${props => props.offset && css`
+    margin-left: ${props.offset}%;
+  `}
 `;
 
 export const Grid = styled.div`
