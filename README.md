@@ -80,6 +80,10 @@ const App = () => (
 ```
 For more column and offset values, see the [demo](https://josephrexme.github.io/griz/).
 
+### To do
+- Add custom breakpoints
+- Add custom gutter widths
+
 ### License
 Licensed under MIT License, Copyright © Joseph Rex
 

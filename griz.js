@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const paddingWidth = 10;
+const gutterWidth = 10;
 const responsiveSmBreak = '567px';
 const responsiveMdBreak = '767px';
 const responsiveLgBreak = '1023px';
@@ -31,7 +31,7 @@ const offsets = offset => {
 export const GridCol = styled.div`
   display: block;
   flex: 1;
-  padding: ${paddingWidth / 2}px;
+  padding: ${gutterWidth / 2}px;
   width: 100%;
   ${props => columns(props.column)}
   ${props => offsets(props.offset)}
@@ -40,16 +40,16 @@ export const GridCol = styled.div`
 export const Grid = styled.div`
   display: flex;
   width: 100%;
-  padding: ${paddingWidth / 2}px;
+  padding: ${gutterWidth / 2}px;
   & + &{
-    margin-top: ${(paddingWidth / 2) * -1}px;
+    margin-top: ${(gutterWidth / 2) * -1}px;
     padding-top: 0;
   }
   @media (max-width: ${responsiveSmBreak}){
     ${props => props.responsiveSm && css`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${(paddingWidth * 3) / 2}px;
+        margin-bottom: ${(gutterWidth * 3) / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
@@ -60,7 +60,7 @@ export const Grid = styled.div`
     ${props => props.responsiveMd && css`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${(paddingWidth * 3) / 2}px;
+        margin-bottom: ${(gutterWidth * 3) / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
@@ -71,7 +71,7 @@ export const Grid = styled.div`
     ${props => props.responsiveLg && css`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${(paddingWidth * 3) / 2}px;
+        margin-bottom: ${(gutterWidth * 3) / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
