@@ -49,8 +49,17 @@ const App = () => (
 );
 ```
 
-#### Gutterless
-Grid without gutters
+#### Gutters
+Custom widths can be set to override the 10px gutter width
+```jsx
+const App = () => (
+  <Grid gutterWidth="20">
+    <GridCol>So close Jack</GridCol>
+    <GridCol>So close Rose</GridCol>
+  </Grid>
+);
+```
+You could set custom width to 0 for a gutterless grid or you can simply use gutterless.
 ```jsx
 const App = () => (
   <Grid gutterless>
