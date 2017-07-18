@@ -50,7 +50,7 @@ const App = () => (
 ```
 
 #### Gutters
-Custom widths can be set to override the 10px gutter width
+Custom widths can be set to override the default 10px gutter width
 ```jsx
 const App = () => (
   <Grid gutterWidth="20">
