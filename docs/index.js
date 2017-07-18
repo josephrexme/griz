@@ -113,6 +113,16 @@ render((
         <GridCol column="34"><Fill>{annotate('GridCol', 34)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
+        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+      </Grid>
+      <Grid responsiveMd>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+      </Grid>
+      <Grid responsiveMd>
         <GridCol column="67"><Fill>{annotate('GridCol', 67)}</Fill></GridCol>
         <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
       </Grid>
@@ -139,6 +149,23 @@ render((
       </Grid>
       <Grid responsiveSm>
         <GridCol offset="75"><Fill>{annotate('GridCol', '75', 1)}</Fill></GridCol>
+      </Grid>
+    </Section>
+    <Section>
+      <h2>{annotate('Grid')}</h2>
+      <p>
+        When programmatically listing items you may prefer not to set rows for each line.
+        To get around that you can have wrapping rows with griz but you will need to define
+        a column value. Here's an example for 6 items all taking 33.3 for a precise triple
+        grid per line.
+      </p>
+      <Grid>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
       </Grid>
     </Section>
     <Section>

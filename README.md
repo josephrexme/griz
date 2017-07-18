@@ -80,6 +80,9 @@ const App = () => (
 ```
 For more column and offset values, see the [demo](https://josephrexme.github.io/griz/).
 
+#### Wrapping columns
+When column value is not defined you get the benefit of automatically fitting in the columns on one line of the row. If you need wrapping columns you'll have to specify a column value. A common case for this is when iterating items programmatically.
+
 ### To do
 - Add custom breakpoints
 - Add custom gutter widths
