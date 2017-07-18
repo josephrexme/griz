@@ -86,7 +86,6 @@ When column value is not defined you get the benefit of automatically fitting in
 
 ### To do
 - Add custom breakpoints
-- Add custom gutter widths
 
 ### License
 Licensed under MIT License, Copyright © Joseph Rex

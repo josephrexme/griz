@@ -56,8 +56,9 @@ const Footer = styled.p`
 
 const annotate = (...prop) => {
   const [first, second, third] = prop;
-  const attribute = third ? `${first} offset="${second}"` : `${first} column="${second}"`;
-  return `<${ second && (first === 'Grid' ? `${first} ${second}` : attribute) || first}>`;
+  return `<${first}${ second ? third ? ` ${second}="${third}"` : ` ${second}` : ''}>`
+  // const attribute = third ? `${first} offset="${second}"` : `${first} column="${second}"`;
+  // return `<${ second && (first === 'Grid' ? `${first} ${second}` : attribute) || first}>`;
 };
 
 render((
@@ -87,44 +88,44 @@ render((
         <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="60"><Fill>{annotate('GridCol', 60)}</Fill></GridCol>
-        <GridCol column="40"><Fill>{annotate('GridCol', 40)}</Fill></GridCol>
+        <GridCol column="60"><Fill>{annotate('GridCol', 'column', 60)}</Fill></GridCol>
+        <GridCol column="40"><Fill>{annotate('GridCol', 'column', 40)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
-        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
-        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
-        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 'column', 25)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 'column', 25)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 'column', 25)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 'column', 25)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
-        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
-        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
-        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
-        <GridCol column="20"><Fill>{annotate('GridCol', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 'column', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 'column', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 'column', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 'column', 20)}</Fill></GridCol>
+        <GridCol column="20"><Fill>{annotate('GridCol', 'column', 20)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="25"><Fill>{annotate('GridCol', 25)}</Fill></GridCol>
-        <GridCol column="75"><Fill>{annotate('GridCol', 75)}</Fill></GridCol>
+        <GridCol column="25"><Fill>{annotate('GridCol', 'column', 25)}</Fill></GridCol>
+        <GridCol column="75"><Fill>{annotate('GridCol', 'column', 75)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
-        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
-        <GridCol column="34"><Fill>{annotate('GridCol', 34)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 'column', 33)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 'column', 33)}</Fill></GridCol>
+        <GridCol column="34"><Fill>{annotate('GridCol', 'column', 34)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
-        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
-        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 'column', 33)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 'column', 33)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 'column', 33)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
       </Grid>
       <Grid responsiveMd>
-        <GridCol column="67"><Fill>{annotate('GridCol', 67)}</Fill></GridCol>
-        <GridCol column="33"><Fill>{annotate('GridCol', 33)}</Fill></GridCol>
+        <GridCol column="67"><Fill>{annotate('GridCol', 'column', 67)}</Fill></GridCol>
+        <GridCol column="33"><Fill>{annotate('GridCol', 'column', 33)}</Fill></GridCol>
       </Grid>
     </Section>
     <Section>
@@ -133,22 +134,22 @@ render((
         Offsetting columns
       </p>
       <Grid responsiveSm>
-        <GridCol offset="10"><Fill>{annotate('GridCol', '10', 1)}</Fill></GridCol>
+        <GridCol offset="10"><Fill>{annotate('GridCol', 'offset', '10')}</Fill></GridCol>
       </Grid>
       <Grid responsiveSm>
-        <GridCol offset="25"><Fill>{annotate('GridCol', '25', 1)}</Fill></GridCol>
+        <GridCol offset="25"><Fill>{annotate('GridCol', 'offset', '25')}</Fill></GridCol>
       </Grid>
       <Grid responsiveSm>
-        <GridCol offset="33"><Fill>{annotate('GridCol', '33', 1)}</Fill></GridCol>
+        <GridCol offset="33"><Fill>{annotate('GridCol', 'offset', '33')}</Fill></GridCol>
       </Grid>
       <Grid responsiveSm>
-        <GridCol offset="50"><Fill>{annotate('GridCol', '50', 1)}</Fill></GridCol>
+        <GridCol offset="50"><Fill>{annotate('GridCol', 'offset', '50')}</Fill></GridCol>
       </Grid>
       <Grid responsiveSm>
-        <GridCol offset="67"><Fill>{annotate('GridCol', '67', 1)}</Fill></GridCol>
+        <GridCol offset="67"><Fill>{annotate('GridCol', 'offset', '67')}</Fill></GridCol>
       </Grid>
       <Grid responsiveSm>
-        <GridCol offset="75"><Fill>{annotate('GridCol', '75', 1)}</Fill></GridCol>
+        <GridCol offset="75"><Fill>{annotate('GridCol', 'offset', '75')}</Fill></GridCol>
       </Grid>
     </Section>
     <Section>
@@ -160,12 +161,23 @@ render((
         grid per line.
       </p>
       <Grid>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
-        <GridCol column="33.3"><Fill>{annotate('GridCol', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+        <GridCol column="33.3"><Fill>{annotate('GridCol', 'column', 33.3)}</Fill></GridCol>
+      </Grid>
+    </Section>
+    <Section>
+      <h2>{annotate('Grid', 'gutterWidth', 20)}</h2>
+      <p>
+        Where custom gutter widths are not defined, griz uses the default 10px gutter.
+      </p>
+      <Grid gutterWidth="20">
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
+        <GridCol><Fill>{annotate('GridCol')}</Fill></GridCol>
       </Grid>
     </Section>
     <Section>

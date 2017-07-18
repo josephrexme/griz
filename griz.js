@@ -8,7 +8,6 @@ const responsiveLgBreak = '1023px';
 export const GridCol = styled.div`
   display: block;
   flex: 1;
-  padding: ${gutterWidth / 2}px;
   width: 100%;
   ${props => props.column && css`
     flex: 0 0 ${props.column}%;
@@ -23,16 +22,19 @@ export const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  padding: ${gutterWidth / 2}px;
   & + &{
-    margin-top: ${(gutterWidth / 2) * -1}px;
+    margin-top: ${props => ((props.gutterWidth || gutterWidth) / 2) * -1}px;
     padding-top: 0;
+  }
+  padding: ${props => (props.gutterWidth || gutterWidth) / 2}px;
+  > ${GridCol}{
+    padding: ${props => (props.gutterWidth || gutterWidth) / 2}px;
   }
   @media (max-width: ${responsiveSmBreak}){
     ${props => props.responsiveSm && css`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${(gutterWidth * 3) / 2}px;
+        margin-bottom: ${((props.gutterWidth || gutterWidth) * 3) / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
@@ -43,7 +45,7 @@ export const Grid = styled.div`
     ${props => props.responsiveMd && css`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${(gutterWidth * 3) / 2}px;
+        margin-bottom: ${((props.gutterWidth || gutterWidth) * 3) / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
@@ -54,7 +56,7 @@ export const Grid = styled.div`
     ${props => props.responsiveLg && css`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${(gutterWidth * 3) / 2}px;
+        margin-bottom: ${((props.gutterWidth || gutterWidth) * 3) / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;

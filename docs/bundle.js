@@ -12401,8 +12401,9 @@ const Footer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */
 
 const annotate = (...prop) => {
   const [first, second, third] = prop;
-  const attribute = third ? `${first} offset="${second}"` : `${first} column="${second}"`;
-  return `<${second && (first === 'Grid' ? `${first} ${second}` : attribute) || first}>`;
+  return `<${first}${second ? third ? ` ${second}="${third}"` : ` ${second}` : ''}>`;
+  // const attribute = third ? `${first} offset="${second}"` : `${first} column="${second}"`;
+  // return `<${ second && (first === 'Grid' ? `${first} ${second}` : attribute) || first}>`;
 };
 
 Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12528,7 +12529,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 60)
+          annotate('GridCol', 'column', 60)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12537,7 +12538,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 40)
+          annotate('GridCol', 'column', 40)
         )
       )
     ),
@@ -12550,7 +12551,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 25)
+          annotate('GridCol', 'column', 25)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12559,7 +12560,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 25)
+          annotate('GridCol', 'column', 25)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12568,7 +12569,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 25)
+          annotate('GridCol', 'column', 25)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12577,7 +12578,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 25)
+          annotate('GridCol', 'column', 25)
         )
       )
     ),
@@ -12590,7 +12591,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 20)
+          annotate('GridCol', 'column', 20)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12599,7 +12600,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 20)
+          annotate('GridCol', 'column', 20)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12608,7 +12609,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 20)
+          annotate('GridCol', 'column', 20)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12617,7 +12618,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 20)
+          annotate('GridCol', 'column', 20)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12626,7 +12627,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 20)
+          annotate('GridCol', 'column', 20)
         )
       )
     ),
@@ -12639,7 +12640,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 25)
+          annotate('GridCol', 'column', 25)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12648,7 +12649,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 75)
+          annotate('GridCol', 'column', 75)
         )
       )
     ),
@@ -12661,7 +12662,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33)
+          annotate('GridCol', 'column', 33)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12670,7 +12671,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33)
+          annotate('GridCol', 'column', 33)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12679,7 +12680,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 34)
+          annotate('GridCol', 'column', 34)
         )
       )
     ),
@@ -12692,7 +12693,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33)
+          annotate('GridCol', 'column', 33)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12701,7 +12702,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33)
+          annotate('GridCol', 'column', 33)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12710,7 +12711,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33)
+          annotate('GridCol', 'column', 33)
         )
       )
     ),
@@ -12723,7 +12724,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12732,7 +12733,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12741,7 +12742,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       )
     ),
@@ -12754,7 +12755,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 67)
+          annotate('GridCol', 'column', 67)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12763,7 +12764,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33)
+          annotate('GridCol', 'column', 33)
         )
       )
     )
@@ -12790,7 +12791,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', '10', 1)
+          annotate('GridCol', 'offset', '10')
         )
       )
     ),
@@ -12803,7 +12804,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', '25', 1)
+          annotate('GridCol', 'offset', '25')
         )
       )
     ),
@@ -12816,7 +12817,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', '33', 1)
+          annotate('GridCol', 'offset', '33')
         )
       )
     ),
@@ -12829,7 +12830,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', '50', 1)
+          annotate('GridCol', 'offset', '50')
         )
       )
     ),
@@ -12842,7 +12843,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', '67', 1)
+          annotate('GridCol', 'offset', '67')
         )
       )
     ),
@@ -12855,7 +12856,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', '75', 1)
+          annotate('GridCol', 'offset', '75')
         )
       )
     )
@@ -12882,7 +12883,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12891,7 +12892,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12900,7 +12901,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12909,7 +12910,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12918,7 +12919,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12927,7 +12928,52 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           Fill,
           null,
-          annotate('GridCol', 33.3)
+          annotate('GridCol', 'column', 33.3)
+        )
+      )
+    )
+  ),
+  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    Section,
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h2',
+      null,
+      annotate('Grid', 'gutterWidth', 20)
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Where custom gutter widths are not defined, griz uses the default 10px gutter.'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__griz_js__["a" /* Grid */],
+      { gutterWidth: '20' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol')
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol')
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3__griz_js__["b" /* GridCol */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Fill,
+          null,
+          annotate('GridCol')
         )
       )
     )
@@ -26802,32 +26848,17 @@ const responsiveSmBreak = '567px';
 const responsiveMdBreak = '767px';
 const responsiveLgBreak = '1023px';
 
-const gridSizes = [10, 20, 25, 33, 33.3, 34, 40, 50, 60, 66, 67, 75, 80, 90];
-
-const columns = width => {
-  const container = {};
-  gridSizes.map(size => container[size] = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
-      flex: 0 0 ${size}%;
-      max-width: ${size}%
-    `);
-  return container[width];
-};
-
-const offsets = offset => {
-  const container = {};
-  gridSizes.map(size => container[size] = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
-      margin-left: ${size}%
-    `);
-  return container[offset];
-};
-
 const GridCol = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].div`
   display: block;
   flex: 1;
-  padding: ${gutterWidth / 2}px;
   width: 100%;
-  ${props => columns(props.column)}
-  ${props => offsets(props.offset)}
+  ${props => props.column && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+    flex: 0 0 ${props.column}%;
+    max-width: ${props.column}%;
+  `}
+  ${props => props.offset && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
+    margin-left: ${props.offset}%;
+  `}
 `;
 /* harmony export (immutable) */ __webpack_exports__["b"] = GridCol;
 
@@ -26836,16 +26867,19 @@ const Grid = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  padding: ${gutterWidth / 2}px;
   & + &{
-    margin-top: ${gutterWidth / 2 * -1}px;
+    margin-top: ${props => (props.gutterWidth || gutterWidth) / 2 * -1}px;
     padding-top: 0;
+  }
+  padding: ${props => (props.gutterWidth || gutterWidth) / 2}px;
+  > ${GridCol}{
+    padding: ${props => (props.gutterWidth || gutterWidth) / 2}px;
   }
   @media (max-width: ${responsiveSmBreak}){
     ${props => props.responsiveSm && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${gutterWidth * 3 / 2}px;
+        margin-bottom: ${(props.gutterWidth || gutterWidth) * 3 / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
@@ -26856,7 +26890,7 @@ const Grid = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].
     ${props => props.responsiveMd && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${gutterWidth * 3 / 2}px;
+        margin-bottom: ${(props.gutterWidth || gutterWidth) * 3 / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
@@ -26867,7 +26901,7 @@ const Grid = __WEBPACK_IMPORTED_MODULE_0_styled_components__["b" /* default */].
     ${props => props.responsiveLg && __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* css */]`
       flex-direction: column;
       > ${GridCol}{
-        margin-bottom: ${gutterWidth * 3 / 2}px;
+        margin-bottom: ${(props.gutterWidth || gutterWidth) * 3 / 2}px;
         margin-left: 0;
         max-width: 100%;
         width: 100%;
