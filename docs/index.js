@@ -11,7 +11,7 @@ injectGlobal`
     margin: 0;
     padding: 40px;
     background: #c1c1c1;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     color: #555;
   }
   h2{ margin: 10px 0 }
