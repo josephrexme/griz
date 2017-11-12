@@ -10,8 +10,6 @@
 
 A grid system for React applications based on flexbox and [styled-components](https://www.styled-components.com). See the [demo](https://josephrexme.github.io/griz/). Griz uses [styled-components](https://www.styled-components.com). But there's also a [Sass/CSS version](https://gist.github.com/josephrexme/e71e5502b09b5421084f32dcdce8247a).
 
-> Future griz will use css grids with a flexbox fallback
-
 ### Installation
 
 ```sh
