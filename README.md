@@ -91,9 +91,6 @@ For more column and offset values at work, see the [demo](https://josephrexme.gi
 #### Wrapping columns
 When column value is not defined you get the benefit of automatically fitting in the columns on one line of the row. If you need wrapping columns you'll have to specify a column value. A common case for this is when iterating items programmatically.
 
-### To do
-- Add custom breakpoints
-
 ### License
 Licensed under MIT License, Copyright © Joseph Rex
 
