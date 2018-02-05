@@ -2,11 +2,11 @@
   "name": "griz",
   "version": "1.3.0",
   "description": "Griz Grid",
-  "main": "griz.js",
+  "main": "griz-es5.js",
   "scripts": {
-    "test": "webpack-dev-server",
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "npx babel-cli griz.js -o griz-es5.js",
+    "builddocs": "webpack"
   },
   "repository": {
     "type": "git",

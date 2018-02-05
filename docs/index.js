@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import styled, { injectGlobal } from 'styled-components';
-import { Grid, GridCol } from '../griz.js';
+import { Grid, GridCol } from 'griz';
 
 injectGlobal`
   *{ box-sizing: border-box }
